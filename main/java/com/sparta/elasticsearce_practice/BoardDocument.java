@@ -1,12 +1,15 @@
 package com.sparta.elasticsearce_practice;
 
 import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.data.elasticsearch.annotations.*;
 
 import java.time.LocalDateTime;
 
-@Document(indexName = "boards")
-@Setting(settingPath = "/elasticsearch/board-document.json")
+@Document(indexName = "board")
+@NoArgsConstructor
+@Getter
 public class BoardDocument {
     @Id
     private Long id;

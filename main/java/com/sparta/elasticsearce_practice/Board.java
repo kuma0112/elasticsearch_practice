@@ -6,6 +6,7 @@ import lombok.Setter;
 
 @Entity
 @Getter
+@Setter
 public class Board extends Timestamped{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

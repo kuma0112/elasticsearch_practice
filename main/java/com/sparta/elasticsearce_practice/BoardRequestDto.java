@@ -7,4 +7,5 @@ public class BoardRequestDto {
     private Long memberId;
     private String title;
     private String content;
+    private String keyword;
 }
