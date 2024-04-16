@@ -1,13 +1,13 @@
-package com.sparta.elasticsearce_practice;
+package com.sparta.elasticsearch_practice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ElasticsearcePracticeApplication {
+public class ElasticsearchPracticeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ElasticsearcePracticeApplication.class, args);
+        SpringApplication.run(ElasticsearchPracticeApplication.class, args);
     }
 
 }

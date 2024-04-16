@@ -1,4 +1,4 @@
-package com.sparta.elasticsearce_practice;
+package com.sparta.elasticsearch_practice;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

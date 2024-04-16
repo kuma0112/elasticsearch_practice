@@ -1,4 +1,4 @@
-package com.sparta.elasticsearce_practice;
+package com.sparta.elasticsearch_practice;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.PageRequest;

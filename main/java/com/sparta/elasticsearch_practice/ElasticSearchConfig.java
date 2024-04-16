@@ -1,8 +1,6 @@
-package com.sparta.elasticsearce_practice;
+package com.sparta.elasticsearch_practice;
 
 import co.elastic.clients.transport.TransportUtils;
-import org.apache.http.HttpHost;
-import org.elasticsearch.client.RestClient;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.elasticsearch.client.ClientConfiguration;
 import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfiguration;
@@ -11,10 +9,10 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 import javax.net.ssl.SSLContext;
 
 @Configuration
-@EnableElasticsearchRepositories(basePackageClasses = com.sparta.elasticsearce_practice.BoardDocumentRepository.class)
+@EnableElasticsearchRepositories(basePackageClasses = com.sparta.elasticsearch_practice.BoardDocumentRepository.class)
 public class ElasticSearchConfig extends ElasticsearchConfiguration {
 
-    String fingerprint = "37beffa6659d7a2b206fe9ac6ef2b49215eccb452fd45c3cf26248e34b68dd27";
+    String fingerprint = "6b120674b921c47eaf8870c473a941101b3881c4f24666fe2e6f6bef628bc2a8";
 
     SSLContext sslContext = TransportUtils.sslContextFromCaFingerprint(fingerprint);
 
@@ -23,7 +21,7 @@ public class ElasticSearchConfig extends ElasticsearchConfiguration {
         return ClientConfiguration.builder()
                 .connectedTo("localhost:9200")
                 .usingSsl(sslContext) // SSL 사용 설정
-                .withBasicAuth("elastic", "FJW3vh6q6QyUpvYC8j2B") // 기본 인증을 사용하는 경우
+                .withBasicAuth("elastic", "O01KH-JfQoexKsL9gX6u") // 기본 인증을 사용하는 경우
                 .build();
     }
 }
